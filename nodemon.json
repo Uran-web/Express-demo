@@ -1,0 +1,7 @@
+{
+  "wathc": ["src"],
+  "ext": ".js, .ts",
+  "execMap": {
+    "ts": "node --import=tsimp/import"
+  }
+}
