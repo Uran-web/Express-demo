@@ -37,7 +37,7 @@ const postSignUpHandler = async (req: Request, res: Response) => {
 const postSignOutHandler = (
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) => {
   req.logout(function (err) {
     if (err) {

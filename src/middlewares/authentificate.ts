@@ -11,7 +11,7 @@ interface IOptions {
 type Done = (
   error: any,
   user?: Express.User | false,
-  options?: IOptions
+  options?: IOptions,
 ) => void;
 
 passport.use(
@@ -39,8 +39,8 @@ passport.use(
       } catch (error) {
         return done(error);
       }
-    }
-  )
+    },
+  ),
 );
 
 passport.serializeUser((user: IUser, done: Done) => {

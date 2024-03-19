@@ -10,11 +10,7 @@ const config: Config = {
     // "^.+\\.jsx?$": "babel-jest",
     // "^.+\\.mjs$": "babel-jest",
   },
-  testPathIgnorePatterns: [
-    './build/',
-    './node_modules/',
-    './dist/',
-  ],
+  testPathIgnorePatterns: ['./build/', './node_modules/', './dist/'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json'],
   moduleNameMapper: {
     '^~(.*)$': './src/$1',

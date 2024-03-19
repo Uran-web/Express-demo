@@ -72,7 +72,7 @@ describe('Test authentication routes', () => {
       .set('Accept', 'application/json');
     expect(res.body.statusCode).toBe(400);
     expect(res.body.error.password).toBe(
-      'Password should contain 8 characters,\n at least 1 lower case and 1 upper case letter,\n at lease one number and "_" symbol'
+      'Password should contain 8 characters,\n at least 1 lower case and 1 upper case letter,\n at lease one number and "_" symbol',
     );
   });
 
@@ -106,7 +106,7 @@ describe('Test authentication routes', () => {
       .set('Accept', 'application/json');
     expect(res.body.statusCode).toBe(400);
     expect(res.body.error.password).toBe(
-      'Password should contain 8 characters,\n at least 1 lower case and 1 upper case letter,\n at lease one number and "_" symbol'
+      'Password should contain 8 characters,\n at least 1 lower case and 1 upper case letter,\n at lease one number and "_" symbol',
     );
   });
 

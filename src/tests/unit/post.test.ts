@@ -38,7 +38,7 @@ describe('GET /posts', () => {
 
   it('Delete post request. Should return 202', async () => {
     const result = await request(BASE_URL).delete(
-      '/posts/12de057x9fbh6ded2bdq7r26'
+      '/posts/12de057x9fbh6ded2bdq7r26',
     );
     expect(result.statusCode).toBe(202);
     expect(result.text).toBe('Post was successfully deleted');
@@ -49,6 +49,4 @@ describe('GET /posts', () => {
     expect(result.statusCode).toBe(404);
     expect(result.text).toBe('Post not found');
   });
-
-  
 });
